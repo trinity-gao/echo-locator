@@ -162,7 +162,7 @@ Profile:
   UseCommuterRail: I’m willing to take the express bus or commuter rail
   UseCommuterRailExplanation: The Commuter rail and express bus allow us to recommend more neighborhoods, but they usually cost more than the subway or local bus.
   TravelFrequency: Why are we asking you this?
-  Tooltips:
+Tooltips:
   AboveAverage: above average
   Average: about average
   BelowAverage: below average
@@ -325,7 +325,7 @@ SpanishHeader:
   New: New search
   Edit: Edit profile
   SignIn: Sign in
-SpanishSpanishAccounts:
+SpanishAccounts:
   Create: Create new profile
   CreateError: Failed to create profile. Please try again.
   InvalidVoucherNumber: Client ID should be six to eight digits or letters.
@@ -336,7 +336,7 @@ SpanishSpanishAccounts:
   NoResults: Profile not found. Create one now?
   Title: Profiles
   Voucher: Client ID
-SpanishSpanishProfile:
+SpanishProfile:
   AddAddress: Agregar otro destino
   Address: Dirección
   AddressMissing: Todos los destinos deben tener una dirección. Establezca o elimine cualquier destino vacío.
@@ -376,7 +376,7 @@ SpanishSpanishProfile:
   UseCommuterRail: Incluye tren de cercanías y autobús expreso
   UseCommuterRailExplanation: Los resultados de búsqueda incluirán metro, autobús local, tren de cercanías y autobús expreso. El tren de cercanías y el autobús expreso harán que más comunidades sean accesibles, pero generalmente cuestan más que el servicio de metro y autobús local.
   TravelFrequency: ¿Porque esta pregunta?
-  SpanishTooltips:
+SpanishTooltips:
   AboveAverage: above average
   Average: about average
   BelowAverage: below average
