@@ -387,7 +387,7 @@ SpanishTooltips:
   ViolentCrime: "<p><strong>%(town)</strong> has <strong>%(averageRelation)</strong> public safety, safer than <strong>%(crimePercentile)%</strong> of other zipcodes in the state. (Source: <a href=\"https://www.fbi.gov/services/cjis/ucr\" target=\"_blank\">FBI Uniform Crime Reporting violent crime data</a>)</p>"
   ViolentCrimeBoston: "<p><strong>%(town)</strong> has <strong>%(averageRelation)</strong> public safety, safer than <strong>%(crimePercentile)%</strong> of other zipcodes in the state. (Source: <a href=\"https://data.boston.gov/\" target=\"_blank\">Boston Police Department Incident Reports</a>)</p>"
   RentalUnits: "<p><strong>%(town)</strong> has an <strong>%(averageRelation)</strong> number of apartment rentals for the state. From 2017-2018 there were <strong>%(totalMapc)</strong> units listed on Craigslist. (Source: <a href=\"https://www.mapc.org/\" target=\"_blank\">MAPC</a>)</p>"
-  SpanishImportanceLabels:
+SpanishImportanceLabels:
   1: No importante
   2: Algo importante
   3: Importante
