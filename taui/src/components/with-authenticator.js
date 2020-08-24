@@ -63,7 +63,7 @@ export default function withAuthenticator (Comp, includeGreetings = false,
       if (lang === 'English') {
         lang = ''
       }
-      this.setState({language: ''})
+      this.setState({language: lang})
     }
 
     /**

@@ -161,7 +161,8 @@ Profile:
   Title: Profile
   UseCommuterRail: I’m willing to take the express bus or commuter rail
   UseCommuterRailExplanation: The Commuter rail and express bus allow us to recommend more neighborhoods, but they usually cost more than the subway or local bus.
-Tooltips:
+  TravelFrequency: Why are we asking you this?
+  Tooltips:
   AboveAverage: above average
   Average: about average
   BelowAverage: below average
@@ -215,7 +216,7 @@ UnknownValue: Unknown
 
 #Spanish
 Spanish: Spanish
-Systems:
+SpanishSystems:
   CalculatingAccessibility: Calculating accessibility...
   NoGrids: No opportunity data has been loaded...
   SelectStart: Select a location to see accessibility
@@ -232,24 +233,24 @@ Systems:
   NoAccess: No data from this point...
   Take: Take
   InaccessibleWithin: inaccessible within
-Faster: faster
-NewTrip: New Trip
+SpanishFaster: faster
+SpanishNewTrip: New Trip
 SpanishGeocoding:
   StartPlaceholder: Search the map
   EndPlaceholder: Choose destination, or click on the map
   FindingLocation: Locating you...
   PromptText: Escribe para encontrar una ubicación
   UseCurrentLocation: Use current location
-Log:
+SpanishLog:
   Title: Log
-Map:
+SpanishMap:
   SelectNetwork: Set time of day
   SetLocationPopup:
     SetStart: Set start
     SetEnd: Set end
     ClearMarkers: Clear markers
   Unreachable: Unreachable by transit
-Dock:
+SpanishDock:
   FormHeading: Travel Times
   LocationLabel: from
   NetworkLabel: when
@@ -265,7 +266,7 @@ Dock:
   ShowAllButton: All
   ShowSavedButton: Saved
   SiteBy: site by Azavea and Altruistech
-NeighborhoodDetails:
+SpanishNeighborhoodDetails:
   AboutNeighborhoodLinksHeading: Learn about this neighborhood
   ApartmentsDotComLink: Apartments.com
   BHAApartmentsLink: Boston Housing Authority
@@ -292,7 +293,7 @@ NeighborhoodDetails:
   WikipediaAttribution: via Wikimedia Commons
   WikipediaLink: Wikipedia
   ZillowSearchLink: Zillow
-NeighborhoodInfo:
+SpanishNeighborhoodInfo:
   SchoolChoice: School choice options »
   EducationCategory: School quality
   ExpandedChoice: An Expanded Choice Community
@@ -300,31 +301,31 @@ NeighborhoodInfo:
   RentalUnits: Apartment rentals
   Score: Overall score
   ViolentCrime: Public safety
-PageNotFound: Oops! There is no page at
-RouteCard:
+SpanishPageNotFound: Oops! There is no page at
+SpanishRouteCard:
   MarkerLink: Show neighborhood on map
-Strings:
+SpanishStrings:
   ApplicationReady: Application is ready!
   SearchForStartAddress: Start location
   SearchForEndAddress: End location
   HighlightAreaAccessibleWithin: Show the area accessible within
   Welcome: Search for your address above or click on the map to get started.
-Slower: slower
-Title: ECHO
-Units:
+SpanishSlower: slower
+SpanishTitle: ECHO
+SpanishUnits:
   About: About
   Minutes: minutes
   Mins: min
-Agency: Boston Housing Authority
-SignIn:
+SpanishAgency: Boston Housing Authority
+SpanishSignIn:
   Anonymous: Continue without an account
   AnonymousExplanation: Don't have an account?
   Greeting: Improving Housing Search for Voucher Families
-Header:
+SpanishHeader:
   New: New search
   Edit: Edit profile
   SignIn: Sign in
-SpanishAccounts:
+SpanishSpanishAccounts:
   Create: Create new profile
   CreateError: Failed to create profile. Please try again.
   InvalidVoucherNumber: Client ID should be six to eight digits or letters.
@@ -335,7 +336,7 @@ SpanishAccounts:
   NoResults: Profile not found. Create one now?
   Title: Profiles
   Voucher: Client ID
-SpanishProfile:
+SpanishSpanishProfile:
   AddAddress: Agregar otro destino
   Address: Dirección
   AddressMissing: Todos los destinos deben tener una dirección. Establezca o elimine cualquier destino vacío.
@@ -374,7 +375,8 @@ SpanishProfile:
   Title: Perfil
   UseCommuterRail: Incluye tren de cercanías y autobús expreso
   UseCommuterRailExplanation: Los resultados de búsqueda incluirán metro, autobús local, tren de cercanías y autobús expreso. El tren de cercanías y el autobús expreso harán que más comunidades sean accesibles, pero generalmente cuestan más que el servicio de metro y autobús local.
-Tooltips:
+  TravelFrequency: ¿Porque esta pregunta?
+  SpanishTooltips:
   AboveAverage: above average
   Average: about average
   BelowAverage: below average
@@ -383,12 +385,12 @@ Tooltips:
   ViolentCrime: "<p><strong>%(town)</strong> has <strong>%(averageRelation)</strong> public safety, safer than <strong>%(crimePercentile)%</strong> of other zipcodes in the state. (Source: <a href=\"https://www.fbi.gov/services/cjis/ucr\" target=\"_blank\">FBI Uniform Crime Reporting violent crime data</a>)</p>"
   ViolentCrimeBoston: "<p><strong>%(town)</strong> has <strong>%(averageRelation)</strong> public safety, safer than <strong>%(crimePercentile)%</strong> of other zipcodes in the state. (Source: <a href=\"https://data.boston.gov/\" target=\"_blank\">Boston Police Department Incident Reports</a>)</p>"
   RentalUnits: "<p><strong>%(town)</strong> has an <strong>%(averageRelation)</strong> number of apartment rentals for the state. From 2017-2018 there were <strong>%(totalMapc)</strong> units listed on Craigslist. (Source: <a href=\"https://www.mapc.org/\" target=\"_blank\">MAPC</a>)</p>"
-SpanishImportanceLabels:
+  SpanishImportanceLabels:
   1: No importante
   2: Algo importante
   3: Importante
   4: Muy Importante
-QuintileLabels:
+SpanishQuintileLabels:
   Affordability:
     1: Very affordable
     2: Very affordable
@@ -415,14 +417,14 @@ SpanishTripPurpose:
   Other: Otro
   Worship: Adoración
   Work: Trabajo
-Booleans:
+SpanishBooleans:
   Yes: Yes
   No: No
-UnknownValue: Unknown
+SpanishUnknownValue: Unknown
 
 #Chinese
 Chinese: Chinese
-Systems:
+ChineseSystems:
   CalculatingAccessibility: Calculating accessibility...
   NoGrids: No opportunity data has been loaded...
   SelectStart: Select a location to see accessibility
@@ -439,24 +441,24 @@ Systems:
   NoAccess: No data from this point...
   Take: Take
   InaccessibleWithin: inaccessible within
-Faster: faster
-NewTrip: New Trip
-Geocoding:
+ChineseFaster: faster
+ChineseNewTrip: New Trip
+ChineseGeocoding:
   StartPlaceholder: Search the map
   EndPlaceholder: Choose destination, or click on the map
   FindingLocation: Locating you...
   PromptText: Type to find a location
   UseCurrentLocation: Use current location
-Log:
+ChineseLog:
   Title: Log
-Map:
+ChineseMap:
   SelectNetwork: Set time of day
   SetLocationPopup:
     SetStart: Set start
     SetEnd: Set end
     ClearMarkers: Clear markers
   Unreachable: Unreachable by transit
-Dock:
+ChineseDock:
   FormHeading: Travel Times
   LocationLabel: from
   NetworkLabel: when
@@ -472,7 +474,7 @@ Dock:
   ShowAllButton: All
   ShowSavedButton: Saved
   SiteBy: site by Azavea and Altruistech
-NeighborhoodDetails:
+ChineseNeighborhoodDetails:
   AboutNeighborhoodLinksHeading: Learn more about this neighborhood
   ApartmentsDotComLink: Apartments.com
   BHAApartmentsLink: Boston Housing Authority
@@ -496,7 +498,7 @@ NeighborhoodDetails:
   WikipediaAttribution: via Wikimedia Commons
   WikipediaLink: Wikipedia
   ZillowSearchLink: Zillow
-NeighborhoodInfo:
+ChineseNeighborhoodInfo:
   SchoolChoice: School choice options »
   EducationCategory: School quality
   ExpandedChoice: An Expanded Choice Community
@@ -504,31 +506,31 @@ NeighborhoodInfo:
   RentalUnits: Apartment rentals
   Score: Overall score
   ViolentCrime: Public safety
-PageNotFound: Oops! There is no page at
-RouteCard:
+ChinesePageNotFound: Oops! There is no page at
+ChineseRouteCard:
   MarkerLink: Show neighborhood on map
-Strings:
+ChineseStrings:
   ApplicationReady: Application is ready!
   SearchForStartAddress: Start location
   SearchForEndAddress: End location
   HighlightAreaAccessibleWithin: Show the area accessible within
   Welcome: Search for your address above or click on the map to get started.
-Slower: slower
-Title: ECHO
-Units:
+ChineseSlower: slower
+ChineseTitle: ECHO
+ChineseUnits:
   About: About
   Minutes: minutes
   Mins: min
-Agency: Boston Housing Authority
-SignIn:
+ChineseAgency: Boston Housing Authority
+ChineseSignIn:
   Anonymous: Continue without an account
   AnonymousExplanation: Don't have an account?
   Greeting: Improving Housing Search for Voucher Families
-Header:
+ChineseHeader:
   New: New search
   Edit: Edit profile
   SignIn: Sign in
-Accounts:
+ChineseAccounts:
   Create: Create new profile
   CreateError: Failed to create profile. Please try again.
   InvalidVoucherNumber: Client ID should be six to eight digits or letters.
@@ -539,7 +541,7 @@ Accounts:
   NoResults: Profile not found. Create one now?
   Title: Profiles
   Voucher: Client ID
-Profile:
+ChineseProfile:
   AddAddress: Add another destination
   Address: Address
   AddressMissing: All destinations should have an address. Please set or remove any empty destinations.
@@ -579,7 +581,7 @@ Profile:
   Title: Profile
   UseCommuterRail: I’m willing to take the express bus or commuter rail
   UseCommuterRailExplanation: The Commuter rail and express bus allow us to recommend more neighborhoods, but they usually cost more than the subway or local bus.
-Tooltips:
+ChineseTooltips:
   AboveAverage: above average
   Average: about average
   BelowAverage: below average
@@ -589,12 +591,12 @@ Tooltips:
   ViolentCrimeBoston: "<p><strong>%(town)</strong> has <strong>%(averageRelation)</strong> public safety, safer than <strong>%(crimePercentile)%</strong> of other zipcodes in the state. (Source: <a href=\"https://data.boston.gov/\" target=\"_blank\">Boston Police Department Incident Reports</a>)</p>"
   RentalUnits: "<p><strong>%(town)</strong> has an <strong>%(averageRelation)</strong> number of apartment rentals for the state. From 2017-2018 there were <strong>%(totalMapc)</strong> units listed on Craigslist. (Source: <a href=\"https://www.mapc.org/\" target=\"_blank\">MAPC</a>)</p>"
   ProfileImpLoc: "Knowing the places you visit often helps us recommend neighborhoods to you. Entering the address of your work or school allows us to recommend neighborhoods that are easy to reach by public transportation."
-ImportanceLabels:
+ChineseImportanceLabels:
   1: Not important
   2: Somewhat important
   3: Important
   4: Very Important
-QuintileLabels:
+ChineseQuintileLabels:
   Affordability:
     1: Very affordable
     2: Very affordable
@@ -613,7 +615,7 @@ QuintileLabels:
     3: Low
     4: Moderate
     5: High
-TripPurpose:
+ChineseTripPurpose:
   Daycare: Day care
   Doctor: Doctor
   Family: Family
@@ -621,7 +623,7 @@ TripPurpose:
   Other: Other
   Worship: Worship
   Work: Work
-Booleans:
+ChineseBooleans:
   Yes: Yes
   No: No
-UnknownValue: Unknown
+ChineseUnknownValue: Unknown

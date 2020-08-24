@@ -25,6 +25,7 @@ import {
   PROFILE_DESTINATION_TYPES
 } from '../constants'
 import type {AccountAddress, AccountProfile} from '../types'
+import getText from '../utils/language-tools'
 
 import Geocoder from './geocoder'
 import Checkbox from './checkbox'
@@ -56,6 +57,7 @@ export default class EditProfile extends PureComponent<Props> {
   props: Props
 
   constructor (props) {
+    getText('English', 'Profile.SaveError')
     super(props)
 
     this.addAddress = this.addAddress.bind(this)
@@ -712,7 +714,7 @@ export default class EditProfile extends PureComponent<Props> {
     return (
       <div className='account-profile__destinations'>
         <h3 className='account-profile__label'>{message(language + 'Profile.Destinations')}</h3>
-        <p style={{color: '#02B3CD', display: 'inline-block'}} data-tip={impLocationToolTip}>Why are we asking you this?</p>
+        <p style={{color: '#02B3CD', display: 'inline-block'}} data-tip={impLocationToolTip}>{message(language + 'Profile.TravelFrequency')}</p>
         <ReactTooltip
           className='map-sidebar__tooltip'
         />
