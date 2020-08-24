@@ -341,12 +341,12 @@ SpanishProfile:
   Address: Dirección
   AddressMissing: Todos los destinos deben tener una dirección. Establezca o elimine cualquier destino vacío.
   ByCar: Coche
-  ByTransit: Tránsito
+  ByTransit: Autobús o tren
   ByTransitExplanation: Los resultados de la búsqueda incluirán el metro y el autobús local.
-  ChooseTravelMode: ¿Cómo va a llegar con mayor frecuencia a las direcciones anteriores?
+  ChooseTravelMode: ¿Cómo suele viajar a estos lugares?
   DeleteAddress: Eliminar esta dirección
   DeletePrimaryAddressError: No se puede eliminar el destino principal. Establecer otro como el principal primero.
-  ChooseVoucher: ¿Tienes un cupón?
+  ChooseVoucher: ¿Tiene usted un vale de Sección 8?
   Cancel: Cancelar
   ClientEmailLabel: Dirección de correo electrónico
   ClientEmailError: Por favor, introduce una dirección de correo electrónico válida.
@@ -356,8 +356,10 @@ SpanishProfile:
   DeleteDestination: Eliminar este destino
   DeleteProfile: Borrar perfil
   DeleteProfileError: No se pudo eliminar el perfil. Inténtalo de nuevo.
-  Destinations: ¿A dónde vas con más frecuencia (además de tu casa)?
+  Destinations: ¿Qué lugares visita a menudo además de su casa?
   ImportanceAccessibility: Tiempo de viaje
+  ImportanceHeadingPtOne: How important are the factors below,
+  ImportanceHeadingPtTwo: when choosing a place to live?
   ImportanceHeading: ¿Qué importancia tienen los siguientes factores al elegir un lugar para vivir?
   ImportanceSchools: Calidad escolar
   ImportanceViolentCrime: Seguridad pública
@@ -373,8 +375,8 @@ SpanishProfile:
   SaveError: No se pudo guardar el perfil. Inténtalo de nuevo.
   InvalidBudget: Presupuesto no válido Por favor ingrese un número positivo.
   Title: Perfil
-  UseCommuterRail: Incluye tren de cercanías y autobús expreso
-  UseCommuterRailExplanation: Los resultados de búsqueda incluirán metro, autobús local, tren de cercanías y autobús expreso. El tren de cercanías y el autobús expreso harán que más comunidades sean accesibles, pero generalmente cuestan más que el servicio de metro y autobús local.
+  UseCommuterRail: Estoy dispuesto a tomar el autobús exprés o el tren suburbano
+  UseCommuterRailExplanation: El tren suburbano y el autobús exprés nos permiten recomendar más vecindarios, pero generalmente cuestan más que el tren subterráneo o el autobús local.
   TravelFrequency: ¿Porque esta pregunta?
 SpanishTooltips:
   AboveAverage: above average
