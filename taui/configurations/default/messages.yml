@@ -177,7 +177,7 @@ Tooltips:
   CommuteTime: "ECHO recommends neighborhoods based on the travel time to the address(es) you entered previously. We take public transit times, rush hour, and other commute metrics into account for our recommendations."
   VoucherNumber: "You can find your voucher number at the *insert location* on your voucher."
   WhyNeighborhoods: "We recommend neighborhoods based on the preferences you set in your profile. We weigh each factor based on how important it is to you. We use this information to recommend neighborhoods that fit your preferences the best."
-  ImportanceLabels:
+ImportanceLabels:
   1: Not important
   2: Somewhat important
   3: Important
@@ -358,8 +358,8 @@ SpanishProfile:
   DeleteProfileError: No se pudo eliminar el perfil. Inténtalo de nuevo.
   Destinations: ¿Qué lugares visita a menudo además de su casa?
   ImportanceAccessibility: Tiempo de viaje
-  ImportanceHeadingPtOne: How important are the factors below,
-  ImportanceHeadingPtTwo: when choosing a place to live?
+  ImportanceHeadingPtOne: ¿Qué importancia tienen los siguientes factores,
+  ImportanceHeadingPtTwo: al elegir un lugar para vivir?
   ImportanceHeading: ¿Qué importancia tienen los siguientes factores al elegir un lugar para vivir?
   ImportanceSchools: Calidad escolar
   ImportanceViolentCrime: Seguridad pública
