@@ -772,28 +772,28 @@ export default class EditProfile extends PureComponent<Props> {
   }
 
   textOptions (props) {
-    const {info, changeField, handleCheckboxChange, showTextOptions, removePreference} = props
+    const {info, changeField, handleCheckboxChange, showTextOptions, removePreference, language} = props
     if (typeof info === 'undefined' || typeof info.preferences === 'undefined') {
       return (
         <div className='account-profile__text-alerts'>
           <div className='account-profile__text-alerts__wrapper'>
-            <h3 className='account-profile__label'>Text Alerts</h3>
-            <h4>None set yet</h4>
+            <h3 className='account-profile__label'>{message(language + 'Profile.TextsTitle')}</h3>
+            <h4>{message(language + 'Profile.TextsNone')}</h4>
           </div>
           <div className='account-profile__text-alerts__text-wrapper'>
-            <p>You can receive texts about new apartments by saving individual neighborhoods. After saving a neighborhood by clicking the heart icon, you will receive texts about new apartments in that area.</p>
+            <p>{message(language + 'Profile.TextsDescription')}</p>
           </div>
         </div>
       )
     } else {
       return (
         <div className='account-profile__text-alerts'>
-          <h3 className='account-profile__label'>Text Alerts</h3>
+          <h3 className='account-profile__label'>{message(language + 'Profile.TextsTitle')}</h3>
           <div className='account-profile__text-alerts__phone-wrapper'>
-            <h5>Mobile Phone Number</h5>
+            <h5>{message(language + 'Profile.TextsPhone')}</h5>
             <input className='account-profile__text-alerts__phone-field' type='text' name='phone' defaultValue={info.phone} onChange={(e) => changeField('textAlertPreferences', e.currentTarget.value, 0, 'phone')} />
             <Checkbox
-              label='I want to opt out of all messages'
+              label={message(language + 'Profile.TextsOptOut')}
               handleCheckboxChange={handleCheckboxChange} />
           </div>
           {showTextOptions &&
@@ -804,15 +804,15 @@ export default class EditProfile extends PureComponent<Props> {
                     <li key={index}>
                       <p className='account-profile__text-alerts__city-text'>{preference.city}</p>
                       <div className='account-profile__text-alerts-frequency-text'>
-                        <p>Current Receiving Alerts</p>
+                        <p>{message(language + 'Profile.TextsReceiving')}</p>
                         <select
                           defaultValue={preference.frequency}
                           onChange={(e) => changeField('textAlertPreferences', e.currentTarget.value, index, 'frequency')}>
-                          <option value='daily'>Daily</option>
-                          <option value='weekly'>Weekly</option>
+                          <option value='daily'>{message(language + 'Profile.TextsDaily')}</option>
+                          <option value='weekly'>{message(language + 'Profile.TextsWeekly')}</option>
                         </select>
                       </div>
-                      <button onClick={(e) => removePreference(info.preferences, preference)}>Stop Receiving Texts</button>
+                      <button onClick={(e) => removePreference(info.preferences, preference)}>{message(language + 'Profile.TextsStop')}</button>
                     </li>
                   )
                 }

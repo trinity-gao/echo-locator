@@ -162,6 +162,15 @@ Profile:
   UseCommuterRail: I’m willing to take the express bus or commuter rail
   UseCommuterRailExplanation: The Commuter rail and express bus allow us to recommend more neighborhoods, but they usually cost more than the subway or local bus.
   TravelFrequency: Why are we asking you this?
+  TextsTitle: Text Alerts
+  TextsNone: None set yet
+  TextsDescription: You can receive texts about new apartments by saving individual neighborhoods. After saving a neighborhood by clicking the heart icon, you will receive texts about new apartments in that area.
+  TextsPhone: Mobile Phone Number
+  TextsOptOut: I want to opt out of all text messages
+  TextsReceiving: Current Receiving Alerts
+  TextsDaily: Daily
+  TextsWeekly: Weekly
+  TextsStop: Stop Receiving Texts
 Tooltips:
   AboveAverage: above average
   Average: about average
@@ -378,6 +387,15 @@ SpanishProfile:
   UseCommuterRail: Estoy dispuesto a tomar el autobús exprés o el tren suburbano
   UseCommuterRailExplanation: El tren suburbano y el autobús exprés nos permiten recomendar más vecindarios, pero generalmente cuestan más que el tren subterráneo o el autobús local.
   TravelFrequency: ¿Porque esta pregunta?
+  TextsTitle: Text Alerts
+  TextsNone: None set yet
+  TextsDescription: You can receive texts about new apartments by saving individual neighborhoods. After saving a neighborhood by clicking the heart icon, you will receive texts about new apartments in that area.
+  TextsPhone: Mobile Phone Number
+  TextsOptOut: I want to opt out of all text messages
+  TextsReceiving: Current Receiving Alerts
+  TextsDaily: Daily
+  TextsWeekly: Weekly
+  TextsStop: Stop Receiving Texts
 SpanishTooltips:
   AboveAverage: above average
   Average: about average
@@ -583,6 +601,15 @@ ChineseProfile:
   Title: Profile
   UseCommuterRail: I’m willing to take the express bus or commuter rail
   UseCommuterRailExplanation: The Commuter rail and express bus allow us to recommend more neighborhoods, but they usually cost more than the subway or local bus.
+  TextsTitle: Text Alerts
+  TextsNone: None set yet
+  TextsDescription: You can receive texts about new apartments by saving individual neighborhoods. After saving a neighborhood by clicking the heart icon, you will receive texts about new apartments in that area.
+  TextsPhone: Mobile Phone Number
+  TextsOptOut: I want to opt out of all text messages
+  TextsReceiving: Current Receiving Alerts
+  TextsDaily: Daily
+  TextsWeekly: Weekly
+  TextsStop: Stop Receiving Texts
 ChineseTooltips:
   AboveAverage: above average
   Average: about average
