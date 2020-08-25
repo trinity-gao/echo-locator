@@ -709,7 +709,6 @@ export default class EditProfile extends PureComponent<Props> {
     })
 
     const impLocationToolTip = message('Tooltips.ProfileImpLoc')
-    console.log('loc tool tip', impLocationToolTip)
 
     return (
       <div className='account-profile__destinations'>

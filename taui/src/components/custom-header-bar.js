@@ -45,16 +45,17 @@ export default class CustomHeaderBar extends Greetings {
     const isCounselor = !!this.props.authData.counselor && !isAnonymous
     const signIn = this.signIn
     const theme = this.props.theme
+    const language = this.props.language
 
     const userInfo = userProfile ? (
       <div className='app-header__user-info'>
         {!isAnonymous && <span className='app-header__user-name'>{userProfile.headOfHousehold}</span>}
         {!isAnonymous && <span className='app-header__voucher-number'># {userProfile.voucherNumber}</span>}
         <span className='app-header__button'>
-          <Link to={{pathname: '/profile', state: {fromApp: true}}}>{message('Header.Edit')}</Link>
+          <Link to={{pathname: '/profile', state: {fromApp: true}}}>{message(language + 'Header.Edit')}</Link>
         </span>
         {isCounselor && <span className='app-header__button app-header__button--new'>
-          <Link to='/search'>{message('Header.New')}</Link>
+          <Link to='/search'>{message(language + 'Header.New')}</Link>
         </span>}
       </div>
     ) : null
@@ -63,7 +64,7 @@ export default class CustomHeaderBar extends Greetings {
       <header className='app-header'>
         <div className='app-header__brand'>
           <img className='app-header__logo' src='assets/BHAlogo.png' alt='' />
-          <span className='app-header__app-name'>{message('Title')}</span>
+          <span className='app-header__app-name'>{message(language + 'Title')}</span>
         </div>
         {userInfo}
         <LanguageSelect setLanguage={this.props.setLanguage} />
@@ -71,7 +72,7 @@ export default class CustomHeaderBar extends Greetings {
         {isAnonymous &&
           <div className='app-header__actions'>
             <NavButton theme={theme} onClick={(e) => signIn(e)}>
-              {message('Header.SignIn')}
+              {message(language + 'Header.SignIn')}
             </NavButton>
           </div>}
       </header>

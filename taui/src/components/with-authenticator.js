@@ -368,6 +368,7 @@ export default function withAuthenticator (Comp, includeGreetings = false,
                 theme={theme}
                 userProfile={userProfile}
                 setLanguage={this.setLanguage}
+                language={this.state.language}
               /> : null
             }
             <Comp
