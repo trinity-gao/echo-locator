@@ -30,6 +30,10 @@ export default class CustomHeaderBar extends Greetings {
     this.changeState('signedOut')
   }
 
+  signOut (theme) {
+    this.renderSignOutButton(theme)
+  }
+
   // based on:
   // https://github.com/aws-amplify/amplify-js/blob/master/packages/aws-amplify-react/src/Auth/Greetings.jsx#L131
   render () {

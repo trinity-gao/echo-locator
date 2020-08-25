@@ -331,9 +331,9 @@ SpanishSignIn:
   AnonymousExplanation: Don't have an account?
   Greeting: Improving Housing Search for Voucher Families
 SpanishHeader:
-  New: New search
-  Edit: Edit profile
-  SignIn: Sign in
+  New: Nueva búsqueda
+  Edit: Editar perfil
+  SignIn: Ingresar
 SpanishAccounts:
   Create: Create new profile
   CreateError: Failed to create profile. Please try again.
