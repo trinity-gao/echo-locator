@@ -1176,7 +1176,9 @@ export default class EditProfile extends PureComponent<Props> {
               isChecked={this.state.isChecked}
               handleCheckboxChange={handleCheckboxChange}
               showTextOptions={showTextOptions}
-              removePreference={removePreference} />
+              removePreference={removePreference}
+              language={this.props.language}
+            />
             <div className='account-profile__actions'>
               <button
                 className='account-profile__button account-profile__button--primary'

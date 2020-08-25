@@ -387,15 +387,15 @@ SpanishProfile:
   UseCommuterRail: Estoy dispuesto a tomar el autobús exprés o el tren suburbano
   UseCommuterRailExplanation: El tren suburbano y el autobús exprés nos permiten recomendar más vecindarios, pero generalmente cuestan más que el tren subterráneo o el autobús local.
   TravelFrequency: ¿Porque esta pregunta?
-  TextsTitle: Text Alerts
-  TextsNone: None set yet
-  TextsDescription: You can receive texts about new apartments by saving individual neighborhoods. After saving a neighborhood by clicking the heart icon, you will receive texts about new apartments in that area.
-  TextsPhone: Mobile Phone Number
-  TextsOptOut: I want to opt out of all text messages
-  TextsReceiving: Current Receiving Alerts
-  TextsDaily: Daily
-  TextsWeekly: Weekly
-  TextsStop: Stop Receiving Texts
+  TextsTitle: Mensajes de texto
+  TextsNone: Ninguno establecido todavía
+  TextsDescription: Puede recibir mensajes de texto sobre nuevos apartamentos guardando vecindarios individuales. Después de guardar un vecindario haciendo clic en el icono de la ☆, recibirá textos sobre nuevos apartamentos en esa área.
+  TextsPhone: Número de teléfono móvil
+  TextsOptOut: Quiero optar de no recibir todos los mensajes
+  TextsReceiving: Actualmente recibiendo mensajes de texto
+  TextsDaily: Diariamente
+  TextsWeekly: Semanal
+  TextsStop: Dejar de recibir mensajes de texto
 SpanishTooltips:
   AboveAverage: above average
   Average: about average
