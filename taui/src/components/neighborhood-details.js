@@ -183,14 +183,14 @@ export default class NeighborhoodDetails extends PureComponent<Props> {
   }
 
   neighborhoodLinks (props) {
-    const { neighborhood, userProfile } = props
+    const { neighborhood, userProfile, language } = props
     const { rooms, budget, hasVoucher } = userProfile
     const maxSubsidy = neighborhood.properties['max_rent_' + rooms + 'br']
 
     return (
       <>
         <h6 className='neighborhood-details__link-heading'>
-          Search for {rooms}BR with a max rent of ${hasVoucher ? maxSubsidy : budget}
+          {message(language + 'NeighborhoodDetails.Search')} {rooms}{message(language + 'NeighborhoodDetails.Unit')} {message(language + 'NeighborhoodDetails.With')} ${hasVoucher ? maxSubsidy : budget}
         </h6>
         <div className='neighborhood-details__links'>
           <a
@@ -320,7 +320,7 @@ export default class NeighborhoodDetails extends PureComponent<Props> {
             <div className='neighborhood-details__desc'>
               {description.substring(0, 80)}...&nbsp;
               <button className='neighborhood-details__button' onClick={this.toggleDescription}>
-                Read More
+                {message(language + 'NeighborhoodDetails.ReadMoreLink')}
               </button>
             </div>
           }
@@ -328,7 +328,7 @@ export default class NeighborhoodDetails extends PureComponent<Props> {
             <div className='neighborhood-details__desc'>
               {description} &nbsp;
               <button className='neighborhood-details__button' onClick={this.toggleDescription}>
-                Read Less
+                {message(language + 'NeighborhoodDetails.ReadLessLink')}
               </button>
               <h6 className='neighborhood-details__link-heading' style={{marginTop: '1rem'}}>
                 {message(language + 'NeighborhoodDetails.AboutNeighborhoodLinksHeading')}
@@ -358,9 +358,9 @@ export default class NeighborhoodDetails extends PureComponent<Props> {
             language={language} />
           <div className='neighborhood-details__header-line' />
           <div className='neighborhood-details__rent'>
-            <span className='neighborhood-details__rent-label'>{hasVoucher ? message(language + 'NeighborhoodDetails.MaxRent') : 'Budget'} </span>
+            <span className='neighborhood-details__rent-label'>{hasVoucher ? message(language + 'NeighborhoodDetails.MaxRent') : message(language + 'NeighborhoodDetails.Budget')} </span>
             <span className='neighborhood-details__rent-value'>${hasVoucher ? maxSubsidy : budget} </span>
-            <span className='neighborhood-details__rent-rooms'>{rooms}BR</span>
+            <span className='neighborhood-details__rent-rooms'>{rooms}{message(language + 'NeighborhoodDetails.Unit')}</span>
           </div>
         </div>
         {this.state.showTextPopup
@@ -437,7 +437,7 @@ export default class NeighborhoodDetails extends PureComponent<Props> {
             </div>
             <div className='neighborhood-details__trip'>
               {listingTime}&nbsp;
-              {message(language + 'Units.Mins')}&nbsp;to selected listing
+              {message(language + 'Units.Mins')}&nbsp;{message(language + 'NeighborhoodDetails.ToListing')}
               <a
                 className='neighborhood-details__directions'
                 href={getGoogleDirectionsLink(
@@ -456,7 +456,8 @@ export default class NeighborhoodDetails extends PureComponent<Props> {
             hasVehicle={hasVehicle}
             neighborhood={neighborhood}
             origin={origin}
-            userProfile={userProfile} />
+            userProfile={userProfile}
+            language={language} />
         </div>
       </div>
     )

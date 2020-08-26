@@ -79,6 +79,11 @@ NeighborhoodDetails:
   WikipediaLink: Wikipedia
   ZillowSearchLink: Zillow
   Title: Transit Directions
+  Unit: BR
+  Search: Search for
+  With: with a max rent of
+  ToListing: to selected listing
+  Budget: Budget
 NeighborhoodInfo:
   SchoolChoice: School choice options
   EducationCategory: School quality
@@ -303,7 +308,12 @@ SpanishNeighborhoodDetails:
   WikipediaAttribution: via Wikimedia Commons
   WikipediaLink: Wikipedia
   ZillowSearchLink: Zillow
-  Title: Transit Directions
+  Title: Direcciones por Transíto
+  Unit: Dor.
+  Search: Busque por
+  With: con alquiler máximo
+  ToListing: to selected listing
+  Budget: Presupuesto
 SpanishNeighborhoodInfo:
   SchoolChoice: Opciones escolares »
   EducationCategory: Calidad escolar
