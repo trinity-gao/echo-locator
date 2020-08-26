@@ -282,7 +282,7 @@ SpanishNeighborhoodDetails:
   ChildCareSearchLink: Child Care Search
   CraigslistSearchLink: Craigslist
   DirectionsLink: Direcciones
-  DriveMode: maneja
+  DriveMode: manejando
   FromOrigin: de
   GoogleSearchLink: Google
   GoogleMapsLink: Google Maps
@@ -296,20 +296,20 @@ SpanishNeighborhoodDetails:
   ReadMoreLink: Read More
   RentEstimatorLink: Rent Estimator
   Section8Link: Section 8
-  TransitMode: transit
+  TransitMode: por transíto
   TransitTitle: Transit Directions
   WebsiteLink: Website
   WikipediaAttribution: via Wikimedia Commons
   WikipediaLink: Wikipedia
   ZillowSearchLink: Zillow
 SpanishNeighborhoodInfo:
-  SchoolChoice: School choice options »
-  EducationCategory: School quality
+  SchoolChoice: Opciones escolares »
+  EducationCategory: Calidad escolar
   ExpandedChoice: An Expanded Choice Community
   Population: Population
-  RentalUnits: Apartment rentals
+  RentalUnits: Unidades de alquiler
   Score: Overall score
-  ViolentCrime: Public safety
+  ViolentCrime: Seguridad publica
 SpanishPageNotFound: Oops! There is no page at
 SpanishRouteCard:
   MarkerLink: Show neighborhood on map
