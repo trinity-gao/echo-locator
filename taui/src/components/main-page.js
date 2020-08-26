@@ -240,6 +240,7 @@ export default class MainPage extends React.PureComponent<Props, State> {
             updateOrigin={p.updateOrigin}
             updateStart={p.updateStart}
             activeAmenities={this.state.amenitiesData}
+            language={p.language}
           />
         </div>
       </div>

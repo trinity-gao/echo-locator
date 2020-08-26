@@ -35,6 +35,10 @@ Map:
     SetEnd: Set end
     ClearMarkers: Clear markers
   Unreachable: Unreachable by transit
+  Price: Price
+  Month: month
+  Unit: Bed
+  GoTo: Go to listing
 Dock:
   FormHeading: Travel Times
   LocationLabel: from
@@ -281,6 +285,10 @@ SpanishMap:
     SetEnd: Set end
     ClearMarkers: Clear markers
   Unreachable: Unreachable by transit
+  Price: Precio
+  Month: mes
+  Unit: Dor.
+  GoTo: Haga clic para apartamento
 SpanishDock:
   FormHeading: Horarios de viaje
   LocationLabel: de

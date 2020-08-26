@@ -1,6 +1,7 @@
 /* eslint-disable complexity */
 // @flow
 import lonlat from '@conveyal/lonlat'
+import message from '@conveyal/woonerf/message'
 import Leaflet from 'leaflet'
 import debounce from 'lodash/debounce'
 import get from 'lodash/get'
@@ -295,7 +296,7 @@ export default class Map extends PureComponent<Props, State> {
     )
   }
 
-  listingPopup (photos, address, community, price, url, beds) {
+  listingPopup (photos, address, community, price, url, beds, language) {
     return (
       <div className='map__popup'>
         <Carousel showIndicators={false} dynamicHeight showThumbs={false} showArrows>
@@ -306,13 +307,13 @@ export default class Map extends PureComponent<Props, State> {
           )}
         </Carousel>
         <div className='map__popup-contents'>
-          <h1>{community && <div>Price: ${community.price_min} - ${community.price_max}/month</div>}</h1>
-          <h1>{price && <div>Price: ${price}/month</div>}</h1>
-          <h2>{beds && <div>${beds} Bed</div>}</h2>
+          <h1>{community && <div>{message(language + 'Map.Price')}: ${community.price_min} - ${community.price_max}/{message(language + 'Map.Month')}</div>}</h1>
+          <h1>{price && <div>{message(language + 'Map.Price')}: ${price}/{message(language + 'Map.Month')}</div>}</h1>
+          <h2>{beds && <div>${beds} {message(language + 'Map.Unit')}</div>}</h2>
           <div className='map__popup__line' />
           <p>{address.line} <br /></p>
           <div className='map__popup__url-wrapper'>
-            <a className='map__popup__url' href={url} target='_blank'>Go to Apartment</a>
+            <a className='map__popup__url' href={url} target='_blank'>{message(language + 'Map.GoTo')}</a>
           </div>
         </div>
       </div>
@@ -425,6 +426,8 @@ export default class Map extends PureComponent<Props, State> {
     let zIndex = 0
     const getZIndex = () => zIndex++
 
+    const language = p.language
+
     return (
       p.routableNeighborhoods ? <LeafletMap
         bounds={p.neighborhoodBoundsExtent}
@@ -526,7 +529,7 @@ export default class Map extends PureComponent<Props, State> {
                 }}>
 
                 <Popup>
-                  {listingPopup(item.photos, item.address, item.community, item.price, item.rdc_web_url, item.beds)}
+                  {listingPopup(item.photos, item.address, item.community, item.price, item.rdc_web_url, item.beds, language)}
                 </Popup>
 
               </Marker>
@@ -556,7 +559,7 @@ export default class Map extends PureComponent<Props, State> {
                 }}>
 
                 <Popup>
-                  {listingPopup(item.photos, item.address, item.community, item.Rent, item.rdc_web_url, item.beds)}
+                  {listingPopup(item.photos, item.address, item.community, item.Rent, item.rdc_web_url, item.beds, language)}
                 </Popup>
 
               </Marker>
