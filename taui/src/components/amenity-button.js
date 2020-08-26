@@ -48,7 +48,7 @@ export default class AmenityButton extends Component<Props> {
     }
     var name = this.props.name[0].toUpperCase() + this.props.name.slice(1, this.props.name.length)
     console.log('message query', language + 'TopBar.Amenities.' + name)
-    name = message(language + 'TopBar.Amenities' + name)
+    name = message(language + 'TopBar.Amenities.' + name)
     console.log('name', name)
     return (
       <button className='top-bar__button-amenities' style={{backgroundColor: bgColor}} onClick={this.handleClick} onMouseEnter={this.handleHover} onMouseLeave={this.handleHover}>

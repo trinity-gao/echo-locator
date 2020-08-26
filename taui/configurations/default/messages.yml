@@ -298,10 +298,10 @@ SpanishDock:
   ShowSavedButton: Guardadas
   SiteBy: Sitio hecho por Azavea y Altruistech
 SpanishNeighborhoodDetails:
-  ShowBHAApartments: Show BHA
-  HideBHAApartments: Hide BHA
-  ShowRealtorApartments: Show Realtor.com
-  HideRealtorApartments: Hide Realtor.com
+  ShowBHAApartments: Mostrar BHA
+  HideBHAApartments: Ocultar BHA
+  ShowRealtorApartments: Mostrar Realtor.com
+  HideRealtorApartments: Ocultar Realtor.com
   AboutNeighborhoodLinksHeading: Aprenda sobre este vecindario
   ApartmentsDotComLink: Apartments.com
   BHAApartmentsLink: Boston Housing Authority
@@ -473,6 +473,19 @@ SpanishBooleans:
   Yes: Yes
   No: No
 SpanishUnknownValue: Unknown
+SpanishTopBar:
+  Amenities:
+    School: Escuelas
+    Convenience: Tiendas
+    Health: Salud
+    Community: Comunidad
+    Park: Parques
+    Childcare: Cuidado de niños
+    Library: Bibliotecas
+    Grocery: Supermercados
+    Worship: Lugares de culto
+  ListingsTitle: Apartamentos
+  AmenitiesTitle: Servicios del vecindario
 
 #Chinese
 Chinese: Chinese
