@@ -276,20 +276,20 @@ SpanishDock:
   ShowSavedButton: Guardadas
   SiteBy: Sitio hecho por Azavea y Altruistech
 SpanishNeighborhoodDetails:
-  AboutNeighborhoodLinksHeading: Learn about this neighborhood
+  AboutNeighborhoodLinksHeading: Aprenda sobre este vecindario
   ApartmentsDotComLink: Apartments.com
   BHAApartmentsLink: Boston Housing Authority
   ChildCareSearchLink: Child Care Search
   CraigslistSearchLink: Craigslist
-  DirectionsLink: Directions
-  DriveMode: drive
-  FromOrigin: from
+  DirectionsLink: Direcciones
+  DriveMode: maneja
+  FromOrigin: de
   GoogleSearchLink: Google
   GoogleMapsLink: Google Maps
   GoSection8SearchLink: GoSection8
   HotpadsSearchLink: Hotpads
   MetroHousingLink: Metro Housing
-  MaxRent: Est. max rent
+  MaxRent: Alquiler máx. est.
   ModeSummary: via
   MoreSearchToolsLinksHeading: More search tools
   ReadLessLink: Read Less
@@ -322,8 +322,8 @@ SpanishStrings:
 SpanishSlower: slower
 SpanishTitle: ECHO
 SpanishUnits:
-  About: About
-  Minutes: minutes
+  About: Sobre
+  Minutes: minutos
   Mins: min
 SpanishAgency: Boston Housing Authority
 SpanishSignIn:

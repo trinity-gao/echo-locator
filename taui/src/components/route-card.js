@@ -82,7 +82,8 @@ export default class RouteCard extends React.PureComponent<Props> {
       setActiveNeighborhood,
       setFavorite,
       title,
-      userProfile
+      userProfile,
+      language
     } = this.props
 
     const { time } = neighborhood
@@ -90,8 +91,8 @@ export default class RouteCard extends React.PureComponent<Props> {
     const currentDestination = userProfile.destinations.find(d => originLabel.endsWith(d.location.label))
 
     const modeKey = userProfile.hasVehicle
-      ? 'NeighborhoodDetails.DriveMode'
-      : 'NeighborhoodDetails.TransitMode'
+      ? language + 'NeighborhoodDetails.DriveMode'
+      : language + 'NeighborhoodDetails.TransitMode'
 
     const SummaryImage = this.summaryImage
 
@@ -155,10 +156,10 @@ export default class RouteCard extends React.PureComponent<Props> {
           <div className='neighborhood-summary__descriptive'>
             <div className='neighborhood-summary__trip'>
               <div className='neighborhood-summary__duration'>
-                {message('Units.About')} {roundedTripTime} {message('Units.Mins')} {message(modeKey)}
+                {message(language + 'Units.About')} {roundedTripTime} {message(language + 'Units.Mins')} {message(modeKey)}
                   &nbsp;
                 <span className='neighborhood-summary__mode'>
-                  {message('NeighborhoodDetails.FromOrigin')}
+                  {message(language + 'NeighborhoodDetails.FromOrigin')}
                 </span>
                 &nbsp;
                 <span className='neighborhood-summary__location'>

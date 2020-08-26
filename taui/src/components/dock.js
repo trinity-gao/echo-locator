@@ -213,7 +213,8 @@ export default class Dock extends PureComponent<Props> {
             setFavorite={(e) => setFavorite(neighborhood.properties.id,
               userProfile, changeUserProfile)}
             title={town + ', ' + neighborhood.properties.id}
-            userProfile={userProfile} />
+            userProfile={userProfile}
+            language={language} />
         )
       })
     )
