@@ -271,9 +271,9 @@ SpanishDock:
   GoNextPage: Muestra mas
   ShowListings: Muestra apartamentos
   NoResults: Ningun resultado
-  Recommendations: Sus recomendaciones
-  ShowAllButton: Todo
-  ShowSavedButton: Guardado
+  Recommendations: Recomendaciones
+  ShowAllButton: Todas
+  ShowSavedButton: Guardadas
   SiteBy: Sitio hecho por Azavea y Altruistech
 SpanishNeighborhoodDetails:
   AboutNeighborhoodLinksHeading: Learn about this neighborhood

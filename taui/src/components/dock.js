@@ -156,7 +156,8 @@ export default class Dock extends PureComponent<Props> {
   buttonRow (props) {
     const {
       haveAnotherPage,
-      page
+      page,
+      language
     } = props
 
     const goPreviousPage = this.goPreviousPage
@@ -166,11 +167,11 @@ export default class Dock extends PureComponent<Props> {
       <nav className='map-sidebar__pagination'>
         {page > 0 && <button
           className='map-sidebar__pagination-button'
-          onClick={goPreviousPage}>{message('Dock.GoPreviousPage')}
+          onClick={goPreviousPage}>{message(language + 'Dock.GoPreviousPage')}
         </button>}
         {haveAnotherPage && <button
           className='map-sidebar__pagination-button map-sidebar__pagination-button--strong'
-          onClick={goNextPage}>{message('Dock.GoNextPage')}
+          onClick={goNextPage}>{message(language + 'Dock.GoNextPage')}
         </button>}
       </nav>)
   }
@@ -184,12 +185,13 @@ export default class Dock extends PureComponent<Props> {
       setActiveNeighborhood,
       origin,
       setFavorite,
-      userProfile
+      userProfile,
+      language
     } = props
     const goToDetails = this.goToDetails
 
     if (!neighborhoods || !neighborhoods.length) {
-      return <div className='map-sidebar__no-results'>{message('Dock.NoResults')}</div>
+      return <div className='map-sidebar__no-results'>{message(language + 'Dock.NoResults')}</div>
     }
 
     return (
@@ -224,25 +226,26 @@ export default class Dock extends PureComponent<Props> {
       totalNeighborhoodCount,
       origin,
       startingOffset,
-      showFavorites
+      showFavorites,
+      language
     } = props
     const setShowFavorites = this.setShowFavorites
     const NeighborhoodsList = this.neighborhoodsList
     const showAllClass = `map-sidebar__neighborhoods-action ${!showFavorites ? 'map-sidebar__neighborhoods-action--on' : ''}`
     const showSavedClass = `map-sidebar__neighborhoods-action ${showFavorites ? 'map-sidebar__neighborhoods-action--on' : ''}`
-    const whyNeighborhoodTooltip = message('Tooltips.WhyNeighborhoods')
+    const whyNeighborhoodTooltip = message(language + 'Tooltips.WhyNeighborhoods')
 
     return (
       <>
         <header className='map-sidebar__neighborhoods-header'>
           <h2 className='map-sidebar__neighborhoods-heading'>
             {showFavorites && <>
-              {message('Dock.Favorites')}
+              {message(language + 'Dock.Favorites')}
               &nbsp;
               {endingOffset > 0 && `(${startingOffset + 1}–${endingOffset} of ${totalNeighborhoodCount})`}
             </>}
             {!showFavorites && <>
-              {message('Dock.Recommendations')}
+              {message(language + 'Dock.Recommendations')}
               &nbsp;
               {endingOffset > 0 && `(${startingOffset + 1}–${endingOffset} of ${totalNeighborhoodCount})`}
             </>}
@@ -256,14 +259,14 @@ export default class Dock extends PureComponent<Props> {
               onClick={(e) => setShowFavorites(false)}
               disabled={!showFavorites}
               className={showAllClass}>
-              {message('Dock.ShowAllButton')}
+              {message(language + 'Dock.ShowAllButton')}
             </button>
             &nbsp;|&nbsp;
             <button
               className={showSavedClass}
               disabled={showFavorites}
               onClick={(e) => setShowFavorites(true)}>
-              {message('Dock.ShowSavedButton')}
+              {message(language + 'Dock.ShowSavedButton')}
             </button>
           </div>
         </header>
@@ -298,7 +301,8 @@ export default class Dock extends PureComponent<Props> {
       setDataListings,
       setBHAListings,
       activeListing,
-      listingTravelTime
+      listingTravelTime,
+      language
     } = this.props
     const {componentError} = this.state
     const ButtonRow = this.buttonRow
@@ -337,8 +341,8 @@ export default class Dock extends PureComponent<Props> {
           >
             <Icon type='chevron-circle-left' className='map-sidebar__navigation-chevron-button' />
             {showFavorites
-              ? message('Dock.GoBackToFavorites')
-              : message('Dock.GoBackToRecommendations')}
+              ? message(language + 'Dock.GoBackToFavorites')
+              : message(language + 'Dock.GoBackToRecommendations')}
           </button>
         </nav>
         <NeighborhoodDetails
@@ -369,14 +373,14 @@ export default class Dock extends PureComponent<Props> {
           target='_blank'
           className='map-sidebar__feedback'
         >
-          {message('Dock.FeedbackLink')}
+          {message(language + 'Dock.FeedbackLink')}
         </a>
         <a
           href='https://www.azavea.com'
           target='_blank'
           className='map-sidebar__attribution'
         >
-          {message('Dock.SiteBy')}
+          {message(language + 'Dock.SiteBy')}
         </a>
       </div>
     </div>
