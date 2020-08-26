@@ -11,7 +11,7 @@ import {TOOLTIP_HIDE_DELAY_MS,
 import Meter from './meter'
 import RentalUnitsMeter from './rental-units-meter'
 
-export default function NeighborhoodListInfo ({neighborhood}) {
+export default function NeighborhoodListInfo ({neighborhood, language}) {
   if (!neighborhood || !neighborhood.properties) {
     return null
   }
@@ -28,13 +28,13 @@ export default function NeighborhoodListInfo ({neighborhood}) {
   const isBoston = townArea && townArea === BOSTON_TOWN_AREA
 
   const crimeMessage = isBoston ? 'Tooltips.ViolentCrimeBoston' : 'Tooltips.ViolentCrime'
-  const crimeTooltip = message(crimeMessage, {
+  const crimeTooltip = message(language + crimeMessage, {
     averageRelation: getAverageRelationPercentage(crime),
     crimePercentile: crime,
     town: town
   })
 
-  const edTooltip = message('Tooltips.Education', {
+  const edTooltip = message(language + 'Tooltips.Education', {
     averageRelation: getAverageRelationPercentage(edPercentile),
     edPercentile: edPercentile,
     town: town
@@ -47,7 +47,7 @@ export default function NeighborhoodListInfo ({neighborhood}) {
       <table className='neighborhood-facts'>
         <tbody>
           <tr>
-            <td className='neighborhood-facts__cell' style={{fontWeight: 'bold'}}>{message('NeighborhoodInfo.EducationCategory')}</td>
+            <td className='neighborhood-facts__cell' style={{fontWeight: 'bold'}}>{message(language + 'NeighborhoodInfo.EducationCategory')}</td>
             {!isSchoolChoice && <td className='neighborhood-facts__cell'>
               <Meter
                 category='school'
@@ -57,12 +57,12 @@ export default function NeighborhoodListInfo ({neighborhood}) {
             </td>}
             {isSchoolChoice && <td className='neighborhood-facts__text'>
               <a href={schoolChoiceLink} target='_blank' className='neighborhood-facts__school-choice'>
-                {message('NeighborhoodInfo.SchoolChoice')}
+                {message(language + 'NeighborhoodInfo.SchoolChoice')}
               </a>
             </td>}
           </tr>
           {crime >= 0 && <tr>
-            <td className='neighborhood-facts__cell' style={{fontWeight: 'bold'}}>{message('NeighborhoodInfo.ViolentCrime')}</td>
+            <td className='neighborhood-facts__cell' style={{fontWeight: 'bold'}}>{message(language + 'NeighborhoodInfo.ViolentCrime')}</td>
             <td className='neighborhood-facts__cell'>
               <Meter
                 category='crime'
@@ -72,7 +72,7 @@ export default function NeighborhoodListInfo ({neighborhood}) {
             </td>
           </tr>}
           <tr>
-            <td className='neighborhood-facts__cell' style={{fontWeight: 'bold'}}>{message('NeighborhoodInfo.RentalUnits')}</td>
+            <td className='neighborhood-facts__cell' style={{fontWeight: 'bold'}}>{message(language + 'NeighborhoodInfo.RentalUnits')}</td>
             <td className='neighborhood-facts__cell'>
               <RentalUnitsMeter value={houses} totalMapc={totalMapc} id={zipcode} town={town} />
             </td>

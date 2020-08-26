@@ -361,7 +361,8 @@ export default class Dock extends PureComponent<Props> {
           showRealtorListings={showRealtorListings}
           listingsLoading={listingsLoading}
           setFavorite={setFavorite}
-          userProfile={userProfile} />
+          userProfile={userProfile}
+          language={language} />
       </>}
       {!isLoading && !showDetails &&
         <ButtonRow {...this.props}

@@ -78,6 +78,7 @@ NeighborhoodDetails:
   WikipediaAttribution: via Wikimedia Commons
   WikipediaLink: Wikipedia
   ZillowSearchLink: Zillow
+  Title: Transit Directions
 NeighborhoodInfo:
   SchoolChoice: School choice options
   EducationCategory: School quality
@@ -240,7 +241,7 @@ SpanishSystems:
   AlternateTripsTitle: Alternatively use
   Waiting: waiting included
   NoAccess: No data from this point...
-  Take: Take
+  Take: Tome
   InaccessibleWithin: inaccessible within
 SpanishFaster: faster
 SpanishNewTrip: New Trip
@@ -291,7 +292,7 @@ SpanishNeighborhoodDetails:
   MetroHousingLink: Metro Housing
   MaxRent: Alquiler máx. est.
   ModeSummary: via
-  MoreSearchToolsLinksHeading: More search tools
+  MoreSearchToolsLinksHeading: Más herramientas de búsqueda
   ReadLessLink: Read Less
   ReadMoreLink: Read More
   RentEstimatorLink: Rent Estimator
@@ -302,6 +303,7 @@ SpanishNeighborhoodDetails:
   WikipediaAttribution: via Wikimedia Commons
   WikipediaLink: Wikipedia
   ZillowSearchLink: Zillow
+  Title: Transit Directions
 SpanishNeighborhoodInfo:
   SchoolChoice: Opciones escolares »
   EducationCategory: Calidad escolar

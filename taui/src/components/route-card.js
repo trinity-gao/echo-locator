@@ -169,6 +169,7 @@ export default class RouteCard extends React.PureComponent<Props> {
             </div>
             <NeighborhoodListInfo
               neighborhood={neighborhood}
+              language={language}
             />
           </div>
         </div>

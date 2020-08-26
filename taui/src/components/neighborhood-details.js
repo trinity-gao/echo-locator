@@ -97,10 +97,10 @@ export default class NeighborhoodDetails extends PureComponent<Props> {
   }
 
   neighborhoodStats (props) {
-    const { neighborhood } = props
+    const { neighborhood, language } = props
     return (
       <div className='neighborhood-details__stats'>
-        <NeighborhoodListInfo neighborhood={neighborhood} />
+        <NeighborhoodListInfo neighborhood={neighborhood} language={language} />
       </div>
     )
   }
@@ -273,7 +273,8 @@ export default class NeighborhoodDetails extends PureComponent<Props> {
       setFavorite,
       activeListing,
       listingTravelTime,
-      userProfile
+      userProfile,
+      language
     } = this.props
     const hasVehicle = userProfile ? userProfile.hasVehicle : false
     const NeighborhoodStats = this.neighborhoodStats
@@ -330,7 +331,7 @@ export default class NeighborhoodDetails extends PureComponent<Props> {
                 Read Less
               </button>
               <h6 className='neighborhood-details__link-heading' style={{marginTop: '1rem'}}>
-                {message('NeighborhoodDetails.AboutNeighborhoodLinksHeading')}
+                {message(language + 'NeighborhoodDetails.AboutNeighborhoodLinksHeading')}
               </h6>
               <div className='neighborhood-details__links'>
                 {neighborhood.properties.town_link && <a
@@ -338,14 +339,14 @@ export default class NeighborhoodDetails extends PureComponent<Props> {
                   href={neighborhood.properties.town_link}
                   target='_blank'
                 >
-                  {message('NeighborhoodDetails.WebsiteLink')}
+                  {message(language + 'NeighborhoodDetails.WebsiteLink')}
                 </a>}
                 {neighborhood.properties.wikipedia_link && <a
                   className='neighborhood-details__link'
                   href={neighborhood.properties.wikipedia_link}
                   target='_blank'
                 >
-                  {message('NeighborhoodDetails.WikipediaLink')}
+                  {message(language + 'NeighborhoodDetails.WikipediaLink')}
                 </a>}
               </div>
             </div>
@@ -353,10 +354,11 @@ export default class NeighborhoodDetails extends PureComponent<Props> {
           <div className='neighborhood-details__header-line' />
           <NeighborhoodStats
             neighborhood={neighborhood}
-            userProfile={userProfile} />
+            userProfile={userProfile}
+            language={language} />
           <div className='neighborhood-details__header-line' />
           <div className='neighborhood-details__rent'>
-            <span className='neighborhood-details__rent-label'>{hasVoucher ? message('NeighborhoodDetails.MaxRent') : 'Budget'} </span>
+            <span className='neighborhood-details__rent-label'>{hasVoucher ? message(language + 'NeighborhoodDetails.MaxRent') : 'Budget'} </span>
             <span className='neighborhood-details__rent-value'>${hasVoucher ? maxSubsidy : budget} </span>
             <span className='neighborhood-details__rent-rooms'>{rooms}BR</span>
           </div>
@@ -394,15 +396,15 @@ export default class NeighborhoodDetails extends PureComponent<Props> {
         {!activeListing &&
         <div className='neighborhood-details__section'>
           <div className='neighborhood-details__title'>
-            Transit Directions
+            {message(language + 'NeighborhoodDetails.Title')}
           </div>
           <div className='neighborhood-details__trip'>
             <div>
-              {message('Units.About')}&nbsp;
+              {message(language + 'Units.About')}&nbsp;
               {roundedTripTime}&nbsp;
-              {message('Units.Mins')}&nbsp;
-              <ModesList segments={bestJourney} />&nbsp;
-              {message('NeighborhoodDetails.FromOrigin')}&nbsp;
+              {message(language + 'Units.Mins')}&nbsp;
+              <ModesList segments={bestJourney} language={language} />&nbsp;
+              {message(language + 'NeighborhoodDetails.FromOrigin')}&nbsp;
               <span style={{fontWeight: 'bold'}}>{currentDestination && currentDestination.purpose.toLowerCase()}</span>
             </div>
             <a
@@ -413,7 +415,7 @@ export default class NeighborhoodDetails extends PureComponent<Props> {
                 hasVehicle)}
               target='_blank'
             >
-              {message('NeighborhoodDetails.DirectionsLink')}
+              {message(language + 'NeighborhoodDetails.DirectionsLink')}
             </a>
           </div>
           {!hasVehicle &&
@@ -423,6 +425,7 @@ export default class NeighborhoodDetails extends PureComponent<Props> {
                 hasVehicle={hasVehicle}
                 routeSegments={neighborhood.segments}
                 travelTime={neighborhood.time}
+                language={language}
               />
             </div>
           }
@@ -430,11 +433,11 @@ export default class NeighborhoodDetails extends PureComponent<Props> {
         {activeListing &&
           <div className='neighborhood-details__section'>
             <div className='neighborhood-details__title'>
-              {message('NeighborhoodDetails.Section8Link')}
+              {message(language + 'NeighborhoodDetails.Section8Link')}
             </div>
             <div className='neighborhood-details__trip'>
               {listingTime}&nbsp;
-              {message('Units.Mins')}&nbsp;to selected listing
+              {message(language + 'Units.Mins')}&nbsp;to selected listing
               <a
                 className='neighborhood-details__directions'
                 href={getGoogleDirectionsLink(
@@ -443,7 +446,7 @@ export default class NeighborhoodDetails extends PureComponent<Props> {
                   hasVehicle)}
                 target='_blank'
               >
-                {message('NeighborhoodDetails.DirectionsLink')}
+                {message(language + 'NeighborhoodDetails.DirectionsLink')}
               </a>
             </div>
           </div>
@@ -461,9 +464,9 @@ export default class NeighborhoodDetails extends PureComponent<Props> {
 }
 
 // Builds list of unqiue transit modes used in a trip
-const ModesList = ({segments}) => segments && segments.length ? (
+const ModesList = ({segments, language}) => segments && segments.length ? (
   <>
-    {message('NeighborhoodDetails.ModeSummary')}&nbsp;
+    {message(language + 'NeighborhoodDetails.ModeSummary')}&nbsp;
     {uniq(segments.map(s => s.type)).join('/')}
   </>
-) : message('NeighborhoodDetails.DriveMode')
+) : message(language + 'NeighborhoodDetails.DriveMode')

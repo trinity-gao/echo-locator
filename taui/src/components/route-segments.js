@@ -3,10 +3,10 @@ import message from '@conveyal/woonerf/message'
 
 import Alert from './tr-alert'
 
-export default function RouteSegments ({hasVehicle, routeSegments, travelTime}) {
+export default function RouteSegments ({hasVehicle, routeSegments, travelTime, language}) {
   if (routeSegments.length === 0) {
     if (!hasVehicle) {
-      return <Alert>{message('Systems.TripsEmpty')}</Alert>
+      return <Alert>{message(language + 'Systems.TripsEmpty')}</Alert>
     } else {
       return null
     }
@@ -23,15 +23,15 @@ export default function RouteSegments ({hasVehicle, routeSegments, travelTime}) 
         ))}
         {travelTime > 120 ? (
           <span className='decrease'>
-            {message('System.InaccessibleWithin')} 120 {message('Units.Mins')}
+            {message(language + 'System.InaccessibleWithin')} 120 {message(language + 'Units.Mins')}
           </span>
         ) : (
-          <span>in <strong>{travelTime}</strong> {message('Units.Mins')}</span>
+          <span>in <strong>{travelTime}</strong> {message(language + 'Units.Mins')}</span>
         )}
       </div>
       {routeSegments.length > 1 &&
         <div className='route-segments__alt-trips'>
-          {message('Systems.AlternateTripsTitle')}&nbsp;
+          {message(language + 'Systems.AlternateTripsTitle')}&nbsp;
           {alternateJourneys.map((segments, jindex) => (
             <span key={jindex}>
               {segments.map((segment, index) => (
