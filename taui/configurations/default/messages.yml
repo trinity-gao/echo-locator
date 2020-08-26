@@ -260,21 +260,21 @@ SpanishMap:
     ClearMarkers: Clear markers
   Unreachable: Unreachable by transit
 SpanishDock:
-  FormHeading: Travel Times
-  LocationLabel: from
-  NetworkLabel: when
-  Favorites: Saved recommendations
-  FeedbackLink: We would like your feedback
-  GoBackToRecommendations: Back to your recommendations
-  GoBackToFavorites: Back to saved recommendations
-  GoPreviousPage: Go back
-  GoNextPage: Show more
-  ShowListings: Show apartments
-  NoResults: No results
-  Recommendations: Your recommendations
-  ShowAllButton: All
-  ShowSavedButton: Saved
-  SiteBy: site by Azavea and Altruistech
+  FormHeading: Horarios de viaje
+  LocationLabel: de
+  NetworkLabel: cuando
+  Favorites: Recomendaciones guardadas 
+  FeedbackLink: Nos gustaría recibir sus comentarios
+  GoBackToRecommendations: Regresar a sus recomendaciones
+  GoBackToFavorites: Regresar a sus recomendaciones guardadas
+  GoPreviousPage: Regresar
+  GoNextPage: Muestra mas
+  ShowListings: Muestra apartamentos
+  NoResults: Ningun resultado
+  Recommendations: Sus recomendaciones
+  ShowAllButton: Todo
+  ShowSavedButton: Guardado
+  SiteBy: Sitio hecho por Azavea y Altruistech
 SpanishNeighborhoodDetails:
   AboutNeighborhoodLinksHeading: Learn about this neighborhood
   ApartmentsDotComLink: Apartments.com

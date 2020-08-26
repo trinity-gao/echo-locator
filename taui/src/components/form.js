@@ -37,7 +37,6 @@ export default class Form extends React.PureComponent<Props> {
 
   constructor (props) {
     super(props)
-
     this.getProfileNetworks = this.getProfileNetworks.bind(this)
     this.setNetwork = this.setNetwork.bind(this)
 
@@ -148,12 +147,13 @@ export default class Form extends React.PureComponent<Props> {
     const networkFilterOptions = createNetworksFilter(networks)
 
     const setNetwork = this.setNetwork
+    const language = this.props.language
 
     return (
       <div className='map-sidebar__travel-form'>
-        <h2 className='map-sidebar__travel-form-heading'>{message('Dock.FormHeading')}</h2>
+        <h2 className='map-sidebar__travel-form-heading'>{message(language + 'Dock.FormHeading')}</h2>
         <div className='map-sidebar__field'>
-          <label className='map-sidebar__label'>{message('Dock.LocationLabel')}</label>
+          <label className='map-sidebar__label'>{message(language + 'Dock.LocationLabel')}</label>
           <Select
             className='map-sidebar__select'
             clearable={false}
@@ -161,14 +161,14 @@ export default class Form extends React.PureComponent<Props> {
             options={locations}
             optionHeight={SELECT_OPTION_HEIGHT}
             onChange={this.selectDestination}
-            placeholder={message('Geocoding.StartPlaceholder')}
+            placeholder={message(language + 'Geocoding.StartPlaceholder')}
             style={SELECT_STYLE}
             wrapperStyle={SELECT_WRAPPER_STYLE}
             value={destination}
           />
         </div>
         {!userProfile.hasVehicle && <div className='map-sidebar__field'>
-          <label className='map-sidebar__label'>{message('Dock.NetworkLabel')}</label>
+          <label className='map-sidebar__label'>{message(language + 'Dock.NetworkLabel')}</label>
           <Select
             className='map-sidebar__select'
             clearable={false}
@@ -176,7 +176,7 @@ export default class Form extends React.PureComponent<Props> {
             options={networks}
             optionHeight={SELECT_OPTION_HEIGHT}
             onChange={(e) => setNetwork(e)}
-            placeholder={message('Map.SelectNetwork')}
+            placeholder={message(language + 'Map.SelectNetwork')}
             style={SELECT_STYLE}
             wrapperStyle={SELECT_WRAPPER_STYLE}
             value={network}

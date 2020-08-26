@@ -161,7 +161,8 @@ export default class MainPage extends React.PureComponent<Props, State> {
           showRealtorListings={p.data.showRealtorListings}
           listingsLoading={p.data.listingsLoading}
           showFavorites={p.data.showFavorites}
-          userProfile={p.userProfile}>
+          userProfile={p.userProfile}
+          language={p.language}>
           <Form
             geocode={p.geocode}
             networks={p.data.networks}
@@ -170,6 +171,7 @@ export default class MainPage extends React.PureComponent<Props, State> {
             origin={p.data.origin}
             updateOrigin={p.updateOrigin}
             userProfile={p.userProfile}
+            language={p.language}
           />
         </Dock>
         <div className='main-map'>
