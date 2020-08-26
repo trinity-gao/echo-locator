@@ -197,6 +197,7 @@ export default class MainPage extends React.PureComponent<Props, State> {
             setShowBHAListings={p.setShowBHAListings}
             setShowRealtorListings={p.setShowRealtorListings}
             listingsLoading={p.data.listingsLoading}
+            language={p.language}
           />
           <Map
             {...p.map}

@@ -229,6 +229,20 @@ Booleans:
   Yes: Yes
   No: No
 UnknownValue: Unknown
+TopBar:
+  Amenities:
+    Schools: Schools
+    Convenience: Convenience
+    Health: Health
+    Community: Community
+    Parks: Parks
+    Childcare: Childcare
+    Libraries: Libraries
+    Grocery: Grocery
+    Worship: Worship
+  ListingsTitle: Listings
+  AmenitiesTitle: Neighborhood Amenities
+
 
 #Spanish
 Spanish: Spanish
@@ -284,6 +298,10 @@ SpanishDock:
   ShowSavedButton: Guardadas
   SiteBy: Sitio hecho por Azavea y Altruistech
 SpanishNeighborhoodDetails:
+  ShowBHAApartments: Show BHA
+  HideBHAApartments: Hide BHA
+  ShowRealtorApartments: Show Realtor.com
+  HideRealtorApartments: Hide Realtor.com
   AboutNeighborhoodLinksHeading: Aprenda sobre este vecindario
   ApartmentsDotComLink: Apartments.com
   BHAApartmentsLink: Boston Housing Authority
