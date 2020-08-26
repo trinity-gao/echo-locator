@@ -17,6 +17,7 @@ Systems:
   NoAccess: No data from this point...
   Take: Take
   InaccessibleWithin: inaccessible within
+  In: in
 Faster: faster
 NewTrip: New Trip
 Geocoding:
@@ -248,6 +249,7 @@ SpanishSystems:
   NoAccess: No data from this point...
   Take: Tome
   InaccessibleWithin: inaccessible within
+  In: en
 SpanishFaster: faster
 SpanishNewTrip: New Trip
 SpanishGeocoding:

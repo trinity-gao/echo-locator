@@ -17,16 +17,16 @@ export default function RouteSegments ({hasVehicle, routeSegments, travelTime, l
   return (
     <div className='route-segments'>
       <div className='route-segments__best-trip'>
-        Take&nbsp;
+        {message(language + 'Systems.Take')}&nbsp;
         {bestJourney.map((segment, index) => (
           <Segment key={index} segment={segment} />
         ))}
         {travelTime > 120 ? (
           <span className='decrease'>
-            {message(language + 'System.InaccessibleWithin')} 120 {message(language + 'Units.Mins')}
+            {message(language + 'Systems.InaccessibleWithin')} 120 {message(language + 'Units.Mins')}
           </span>
         ) : (
-          <span>in <strong>{travelTime}</strong> {message(language + 'Units.Mins')}</span>
+          <span>{message(language + 'Systems.In')} <strong>{travelTime}</strong> {message(language + 'Units.Mins')}</span>
         )}
       </div>
       {routeSegments.length > 1 &&

@@ -236,7 +236,7 @@ export default class NeighborhoodDetails extends PureComponent<Props> {
         </div>
         <div className='neighborhood-details__line' />
         <h6 className='neighborhood-details__link-heading'>
-          {message('NeighborhoodDetails.MoreSearchToolsLinksHeading')}
+          {message(language + 'NeighborhoodDetails.MoreSearchToolsLinksHeading')}
         </h6>
         <div className='neighborhood-details__links'>
           <a
