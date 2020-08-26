@@ -275,7 +275,7 @@ export default class TopBar extends Component<Props, State> {
             data={this.state.amenitiesData['school']}
             updateAmenityVisibility={this.updateShownAmenities}
             activeNeighborhood={this.props.activeNeighborhood}
-            langage={language}
+            language={language}
           />
           <AmenityButton
             name={amenityTypes[1]} // Convenience
@@ -284,7 +284,7 @@ export default class TopBar extends Component<Props, State> {
             data={this.state.amenitiesData['convenience']}
             updateAmenityVisibility={this.updateShownAmenities}
             activeNeighborhood={this.props.activeNeighborhood}
-            langage={language}
+            language={language}
           />
           <AmenityButton
             name={amenityTypes[2]} // Health
@@ -293,7 +293,7 @@ export default class TopBar extends Component<Props, State> {
             data={this.state.amenitiesData['health']}
             updateAmenityVisibility={this.updateShownAmenities}
             activeNeighborhood={this.props.activeNeighborhood}
-            langage={language}
+            language={language}
           />
           <AmenityButton
             name={amenityTypes[3]} // Community
@@ -302,7 +302,7 @@ export default class TopBar extends Component<Props, State> {
             data={this.state.amenitiesData['community']}
             updateAmenityVisibility={this.updateShownAmenities}
             activeNeighborhood={this.props.activeNeighborhood}
-            langage={language}
+            language={language}
           />
           <AmenityButton
             name={amenityTypes[4]} // Park
@@ -311,7 +311,7 @@ export default class TopBar extends Component<Props, State> {
             data={this.state.amenitiesData['park']}
             updateAmenityVisibility={this.updateShownAmenities}
             activeNeighborhood={this.props.activeNeighborhood}
-            langage={language}
+            language={language}
           />
           <AmenityButton
             name={amenityTypes[5]} // Childcare
@@ -320,7 +320,7 @@ export default class TopBar extends Component<Props, State> {
             data={this.state.amenitiesData['childcare']}
             updateAmenityVisibility={this.updateShownAmenities}
             activeNeighborhood={this.props.activeNeighborhood}
-            langage={language}
+            language={language}
           />
           <AmenityButton
             name={amenityTypes[6]} // Library
@@ -329,7 +329,7 @@ export default class TopBar extends Component<Props, State> {
             data={this.state.amenitiesData['library']}
             updateAmenityVisibility={this.updateShownAmenities}
             activeNeighborhood={this.props.activeNeighborhood}
-            langage={language}
+            language={language}
           />
           <AmenityButton
             name={amenityTypes[7]} // Grocery
@@ -338,7 +338,7 @@ export default class TopBar extends Component<Props, State> {
             data={this.state.amenitiesData['grocery']}
             updateAmenityVisibility={this.updateShownAmenities}
             activeNeighborhood={this.props.activeNeighborhood}
-            langage={language}
+            language={language}
           />
           <AmenityButton
             name={amenityTypes[8]} // Worship
@@ -347,7 +347,7 @@ export default class TopBar extends Component<Props, State> {
             data={this.state.amenitiesData['worship']}
             updateAmenityVisibility={this.updateShownAmenities}
             activeNeighborhood={this.props.activeNeighborhood}
-            langage={language}
+            language={language}
           />
         </div>
       </div>

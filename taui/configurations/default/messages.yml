@@ -231,13 +231,13 @@ Booleans:
 UnknownValue: Unknown
 TopBar:
   Amenities:
-    Schools: Schools
+    School: Schools
     Convenience: Convenience
     Health: Health
     Community: Community
-    Parks: Parks
+    Park: Parks
     Childcare: Childcare
-    Libraries: Libraries
+    Library: Libraries
     Grocery: Grocery
     Worship: Worship
   ListingsTitle: Listings
