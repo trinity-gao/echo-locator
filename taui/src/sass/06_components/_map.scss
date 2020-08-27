@@ -94,7 +94,7 @@
     }
 
     &__url {
-      @include text(300);
+      @include text(100);
       height: 100%;
       margin: auto;
       color: $white !important;
