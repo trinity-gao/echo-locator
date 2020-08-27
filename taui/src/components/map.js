@@ -309,7 +309,7 @@ export default class Map extends PureComponent<Props, State> {
         <div className='map__popup-contents'>
           <h1>{community && <div>{message(language + 'Map.Price')}: ${community.price_min} - ${community.price_max}/{message(language + 'Map.Month')}</div>}</h1>
           <h1>{price && <div>{message(language + 'Map.Price')}: ${price}/{message(language + 'Map.Month')}</div>}</h1>
-          <h2>{beds && <div>${beds} {message(language + 'Map.Unit')}</div>}</h2>
+          <h2>{beds && <div>{beds} {message(language + 'Map.Unit')}</div>}</h2>
           <div className='map__popup__line' />
           <p>{address.line} <br /></p>
           <div className='map__popup__url-wrapper'>
